@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          .header{
+              display:flex;
+              background-color: blue;
+              height: 10vh;
+              align-items: center;
+              justify-content: space-evenly;
+               
+               
+          }
+
+           .inp{
+            display:inline-flex ;
+            width: 250px;
+            background-color: white;
+            height: 5vh;
+            text-align: left;
+            padding: 5px;
+            flex-basis: 50%;
+            border-width: none;
+            justify-content: space-between;
+           }
+
+          .h1{
+            background-color: white;
+            padding: 10px;
+            color: blue;
+            width: 100px;
+            height: 2vh;
+            text-align: center;
+          }
+
+          .h2{
+              color: white;
+          }
+           
+           .h3{
+               color: white;
+           }
+
+           .header1{
+               display: flex;
+               background-color: white;
+               justify-content: space-evenly;
+               height: 10vh;
+               align-items: center;
+           } 
+
+           .body2{
+               display: inline-flex;
+               background-color:white;
+               height:15vh;
+               width: 100%;
+               padding: 10px;
+               border-bottom:1px solid grey;
+               justify-content: space-between;
+              
+               
+           }
+
+           .sak{
+               color: grey;
+           }
+
+           .side{
+               
+              background-color: blue;
+              height: 5vh;
+              width: 100px;
+              margin: 10px;
+                
+           }
+
+           .btn{
+               color:white ;
+               padding: 5px;
+               width: 100px;
+               text-align: center;
+                
+           }
+
+           .card{
+               display: flex;
+               background-color: white;
+               height: 50vh;
+               padding: 15px;
+               justify-content: space-between;
+           }
+         
+           .p1{
+               color: green;
+           }
+
+           .p2{
+               color: grey;
+           }
+
+            .nav{
+                display: flex;
+                background-color: whitesmoke;
+                height: 35vh;
+                width: 100%;
+                padding:5px;
+                align-items: center;
+                justify-content: space-evenly;
+
+                
+            }  
+           
+           .p3{
+               color: grey;
+           }
+
+            .footer{
+                display:flex;
+                background-color: rgb(11, 11, 31);
+                height: 50vh;
+                justify-content: space-evenly;
+                border-bottom: 2px solid white;
+            }
+
+            .f1{
+                color:white;
+            }
+
+            .v1{
+                color: white;
+            }
+
+
+        </style>
+        <title>Flipkart</title>
+    </head>
+    <body>
+        <div class="header">
+          <img src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_4ee2f9.png"
+           alt="fig" height="30" width="90">
+           <div class="inp">
+            <input type="text" placeholder="Search for product,brands and more">
+            <img src="data:image/png;base64,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"
+            alt="oops!" height="20" width="20"></div>
+           
+           <div class="h1"><b>Login</b></div>
+           <div class="h2"><b>More</b></div>
+           <div class="h3"> <b>Cart</b></div>
+        </div>
+
+        <div class="header1">
+            <div class="h4"><b>Electronics</b></div>
+            <div class="h4"><b>TVs & Appliances</b></div>
+            <div class="h4"><b>Men</b></div>
+            <div class="h4"><b>Women</b></div>
+            <div class="h4"><b>Baby & Kids</b></div>
+            <div class="h4"><b>Home & Furniture</b></div>
+            <div class="h4"><b>Sports,Books & More</b></div>
+            <div class="h4"><b>Offer Zone</b></div>
+        </div>
+
+        <div class="body1">
+            <img src="https://rukminim1.flixcart.com/flap/844/140/image/fe26685001299956.jpg?q=50"
+             alt="oops!" height="300vh" width="100%">    
+        </div>
+
+        <div class="body2">
+            <div class="b1">
+                <h1>Flipstart Deals Of The Day</h1>
+                <p class="sak">Deals Refresh Every 8 Hours</p>   
+            </div>
+            <div  class="side">
+                <div class="btn">View All</div>
+            </div> 
+        </div>
+        <div class="card">
+            <div class="card1">
+                
+                <img src="https://rukminim1.flixcart.com/image/150/150/jzrb53k0pkrrdj/computer/r/b/h/asus-na-laptop-original-imafffw5ka8ah7ha.jpeg?q=70"
+                 alt="oops!" height="150" weight="100">
+                  <h4><b>Asus VivoBook S Series ...</b></h4>
+                 <p class="p1">Just $50000</p>
+                 <p class="p2">$50000 <strike>$60000</strike></p>
+                 
+            </div>
+            <div class="card2">
+
+                <img src="https://rukminim1.flixcart.com/image/150/150/k5fn3ww0/shoe/h/c/g/cb-458-467-10-bavis-red-grey-original-imafz45smzegvfhd.jpeg?q=70"
+                 alt="oops!" height="150" width="150">
+                 <h4>Chevit,kraasa & more</h4>
+                 <p class="p1">Under $200</p>
+                 <p class="p2">Shoes,sandal & more</p>
+
+            </div>
+            <div class="card3">
+                <img src="https://rukminim1.flixcart.com/image/150/150/k33c4nk0pkrrdj/shoe/d/5/x/10-rts11354-red-tape-original-imafhy2dsezgph97.jpeg?q=70"
+                 alt="oops!" height="150" width="150">
+                 <h4>Woodland,Red Tape ...</h4>
+                 <p class="p1">40- 70% Off</p>
+                 <p class="p2">Formal, casual shoes</p> 
+
+            </div>
+            <div class="card4">
+                <img src="https://rukminim1.flixcart.com/image/150/150/smartwatch/z/z/z/gt08-black-rjd-original-imaem2dk5xhhqyyf.jpeg?q=70"
+                 alt="oops!" height="150" width="150">
+                 <h4>Smart Device</h4>
+                 <p class="p1">Extra 20% Off</p>
+                 <p class="p2">Grab or Gone</p>
+            </div>
+            <div class="card5">
+                <img src="https://rukminim1.flixcart.com/image/150/150/jfmuw7k0/hand-messenger-bag/x/p/b/dk160ctan-dk160c-hand-held-bag-diana-korr-original-imaf423qg4nhhf5y.jpeg?q=70"
+                 alt="oops!" height="150" width="150">
+                 <h4>Lavie, Caprese, Baggit</h4>
+                 <p class="p1">Min 60% Off</p>
+                 <p class="p2">Handbags</p>
+            </div>
+            </div>
+
+            <div class="nav">
+                <div class="nav1">
+                    <img src="https://rukminim1.flixcart.com/flap/50/50/image/04be232149f4c36a.jpg?q=50"
+                     alt="oops!" height="200" width="400">
+                </div>
+                <div class="nav2">
+                    <img src="https://rukminim1.flixcart.com/flap/50/50/image/e01ee255dbe0fbfb.jpg?q=50"
+                     alt="oops!" height="200" width="400">
+                </div>
+                <div class="nav2">
+                    <img src="https://rukminim1.flixcart.com/flap/50/50/image/5677d1cec4adc4a3.jpg?q=50"
+                     alt="oops!" height="200" width="400">
+                </div>
+            </div>
+
+            <div class="para">
+                <div>
+                    <h4>Top Stories: <b>Brand Directory</b></h4>
+                    <p class="p3">
+                        MOST SEARCHED FOR ON FLIPKART: Studio Furniture| A.P.J Abdul Kalam Books| Rakesh Yadav BooksVision IAS Books| Chetan Bhagat Books| Amrita Pritam Books| Huawei Band 4| Valentine Gifts| Realme 5i| Realme Buds Air| TV and Appliances Year End Sale| Nokia 55 Inch TV| Realme X2 PRO| Google Nest Mini| World TV DayNoise Colorfit Pro 2 Smartwatch| Unicorn ToysRedmi 8| Teddy Bear| Honor 20i| OPPO K1| Realme 5| Realme 5 Pro| Flipkart Axis Bank Credit Card| Redmi K20| Redmi K20 Pro| Air Purifiers|Realme 3i| Realme X| Phantom 9| Redmi 7A| Redmi Note 7S| Earrings| Mens Watches| Bangles| Necklace| Silver Jewellery| RingsJewellery| Watches| Mangalsutra| Valentine Watches| Valentine Jewellery| Valentines Day Rings| Valentine T-shirts. </br>
+                        MOBILES: Realme X2| Realme 5| Infinix Hot 8| iPhone 11| iPhone 11 Pro| iPhone 11 Pro Max| Mobile Offers| iphone x| iphone 8| iphone 7| iphone 6| Redmi 5A| 4G Mobile| Nokia Mobile| Samsung Mobile| iphone| Oppo Mobile| Vivo Mobile. </br>
+                        CAMERA: GoPro Action Camera| Nikon Camera| Canon Camera| Sony Camera| Canon DSLR| Nikon DSLR. </br>
+                        LAPTOPS: Microsoft Surface Go Pentium Gold 64GB| Microsoft Surface Go Pentium 128GB| Branded Laptops| Apple Laptops| Acer Laptops| Lenovo Laptops| Dell Laptops| Asus Laptops| HP Laptops| Gaming Laptops| 2 in 1 Laptops| Business Laptops.</br>
+                        TVS: MI 43 Inch 4K TV| MI 40 Inch TV| Mi 65 Inch TV| Samsung 32 Smart TV| LG TV| TV| Sony TV| Samsung TV| Mi 49 Inch Smart TV| Android Television| Iffalcon Tv| Mi Tvs. </br>                   
+                        CLOTHING:Men Shirts| Men T-Shirts| Men Suits| Men Trousers| Mens Blazers| Sarees| Dresses| Midi Skirts| Skirts| Designer Salwar Suits| Bra| Sweaters| Jackets| Sweatshirts| Cardigans| Thermals| Ethnic Wear| W Kurtis| Formal Shirts| Designer Kurtis| Dupatta| Cardigans| Party Dresses| Palazzo Suits| Nightgowns| Formal Wear For Men| Maxi Dresses| Midi Dress| Anarkali| Indo Western Dress| Cocktail Dresses| Casual Dresses| Baby Clothes| Republic Day Dresses| IPL T-shirts| Tricolor Frocks| Shapewears| Leggings| White Dresses| Chinos| Sherwani| Barbie Dresses| Girls Clothes| Salwar Suits| Cricket T-shirts| Couple T-shirts| Valentine FashionTops| LehengaTie| Dress Materials| Scarf| Leather Jackets| Denim Jackets| Kurtis| Designer Sarees| Summer Dresses| Kids Clothing| Scarves| Innerwear| Shorts| IPL Caps.    
+                    
+                    </p>
+                    <h4>Flipkart: The One-stop Shopping Destination</h4>
+                    <p class="p3">
+                        E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.
+
+                    </p>
+                    <p class="p3">
+                        What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question.
+
+                    </p>
+                    <h4>Grocery/Supermart</h4>
+                    <p class="p3">
+                        Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our 1 Rupee Store presents new products every day for a nominal price of 1 Rupee only. Terms and conditions apply.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="about">
+                    <h2 class="f1">ABOUT</h2>
+                    <p class="v1">Contact Us</p>
+                    <p class="v1">About Us</p>
+                    <p class="v1">Careers</p>
+                    <p class="v1">Flipkart Stroies</p>
+                    <p class="v1">Press</p>                
+                </div>
+                <div class="help">
+                    <h2 class="f1">HELP</h2>
+                    <p class="v1">Payments</p>
+                    <p class="v1">Shipping</p>
+                    <p class="v1">Cancellation & Return</p>
+                    <p class="v1">FAQs</p>
+                    <p class="v1">Reports Infrigment</p>
+                </div>
+                <div class="policy">
+                    <h2 class="f1">POLICY</h2>
+                    <p class="v1">Return Policy</p>
+                    <p class="v1">Terms Of Use</p>
+                    <p class="v1">Security</p>
+                    <p class="v1">Privacy</p>
+                    <p class="v1">Sitemap</p>
+                    <p class="v1">EPR Compliance</p>
+                </div>
+                <div class="social">
+                    <h2 class="f1">SOCIAL</h2>
+                    <p class="v1">Facebook</p>
+                    <p class="v1">Twitter</p>
+                    <p class="v1">YouTube</p>
+                </div>
+
+            </div>
+
+    </body>
+</html>
