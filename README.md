@@ -1,2 +1,2 @@
 # design
-Designed flipkart web page by using html,css and flexbox
+Designed flipkart and swiggy web page by using html,css and flexbox
